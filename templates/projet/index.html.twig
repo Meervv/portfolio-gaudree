@@ -1,20 +1,49 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProjetController!{% endblock %}
+{% block title %}Mes projets !{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<link rel="stylesheet" href="/assets/css/style_projet.css">
+<div class="card">
+  <div class="content">
+    <div class="front1">
+      Front
+    </div>
+    <div class="back1">
+      Back!
+    </div>
+  </div>
+</div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="card2">
+  <div class="content">
+    <div class="front2">
+      Site WEB avec Symfony 5
+    </div>
+    <div class="back2">
+      <p>Le but du projet était de créer un site vitrine pour un photographe (Monsieur X), avec le Framework Symfony 5.</p>
+        <p>En groupe de trois, nous avions une deadline de 3 semaines pour rendre le projet.</p>
+        <p>Nous devions respecter plusieurs contraintes :
+            <ul>
+                <li>Respecter les pages demandées ;</li>
+                <li>Développer sous Symfony 5 ;</li>
+                <li>Présence de formulaires ;</li>
+                <li>Créer une base de données connectée au site ;</li>
+                <li>Respecter l'architecture MVC (Modele View Controller).</li>
+            </ul>
+        </p>
+    </div>
+  </div>
+</div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Marvine Gaudrée/Documents/workspace/portfolio/portfolio-gaudree/src/Controller/ProjetController.php'|file_link(0) }}">src/Controller/ProjetController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Marvine Gaudrée/Documents/workspace/portfolio/portfolio-gaudree/templates/projet/index.html.twig'|file_link(0) }}">templates/projet/index.html.twig</a></code></li>
-    </ul>
+<div class="card3">
+  <div class="content">
+    <div class="front3">
+        Front !
+    </div>
+    <div class="back3">
+        Back !
+    </div>
+  </div>
 </div>
 {% endblock %}
