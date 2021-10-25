@@ -1,0 +1,41 @@
+h1
+{
+    margin-left: 300px;
+    padding: 0;
+    color: #fff;
+}
+
+.titrePresentation p
+{
+    text-align: center;
+    margin-top: 130px;
+    margin-left : -410px;
+    width: 40em;
+    font-family: Georgia, sans-serif;
+    color: #fff;
+}
+
+.container p
+{
+    text-align: center;
+    margin-top: 330px;
+    margin-left : -885px;
+    width: 70em;
+    font-family: Georgia, sans-serif;
+    color: #fff;
+}
+
+.imgCV
+{
+  
+    min-width: 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cv
+{
+    width: 70%;
+    margin-left: -910px;
+    margin-top: 500px;
+}
