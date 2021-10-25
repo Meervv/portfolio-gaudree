@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+    display: flex;
+    min-height: 100vh;
+    background: #544C48;
+}
+
+.navigation
+{
+    position: relative;
+    width: 350px;
+    height: 100px;
+}
+
+.navigation ul
+{
+    display: flex;
+}
+
+.navigation ul li
+{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+}
+
+.navigation ul li a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.navigation ul li a .icon
+{
+    position: relative;
+    line-height: 75px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.navigation ul li a .icon
+{
+    font-size: 30px;
+    transform: translateY(-6px);
+}
+
+.navigation ul li a .text
+{
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    bottom: 10px;
+    font-weight: 400;
+    transition: 0.25s;
+    text-transform: uppercase;
+    transform: scale(0);
+}
+
+.navigation ul li:hover a .text
+{
+    transform: scale(1);
+}

@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Mon portfolio !{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
             {#{{ encore_entry_link_tags('app') }}#}
         {% endblock %}
-
+        <link rel="stylesheet" href="/assets/css/style_navigation.css">
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
+
     </head>
     <body>
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="/" name="accueil">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="text">Accueil</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="text">Projets</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                        <span class="text">Veilles</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="medal-outline"></ion-icon></span>
+                        <span class="text">Certifications</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="mail-open-outline"></ion-icon></span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            Let list = document.querySelectorAll('.list');
+            function setActiveClass() {
+               list.forEach((item) =>
+               item.classList.remove('active'));
+           }
+           list.forEach((item) =>
+           item.addEventListener('mouseover' , setActiveClass))
+        </script>
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         {% block body %}{% endblock %}
     </body>
 </html>
