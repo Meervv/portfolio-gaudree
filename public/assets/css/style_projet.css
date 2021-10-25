@@ -135,3 +135,27 @@ body {
   color: white;
   transform: rotateY( 180deg );
 }
+
+.lien2 a
+{
+  position: absolute;
+  margin-top: 600px;
+  margin-left: -140px;
+  color : #B81F07;
+}
+
+.lien1 a
+{
+  position: absolute;
+  margin-top: 600px;
+  margin-left: 410px;
+  color: #03659E;
+}
+
+.lien3 a
+{
+  position: absolute;
+  margin-top: 600px;
+  margin-left: 980px;
+  color: #0A9598;
+}
