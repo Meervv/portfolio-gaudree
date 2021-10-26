@@ -3,6 +3,12 @@ body {
   font-family: 'Lily Script One';
 }
 
+h1
+{
+  margin-left: 350px;
+  color: #fff;
+}
+
 .card {
   position: absolute;
   width: 400px;
@@ -140,7 +146,7 @@ body {
 {
   position: absolute;
   margin-top: 600px;
-  margin-left: -140px;
+  margin-left: -620px;
   color : #B81F07;
 }
 
@@ -148,7 +154,7 @@ body {
 {
   position: absolute;
   margin-top: 600px;
-  margin-left: 410px;
+  margin-left: -70px;
   color: #03659E;
 }
 
@@ -156,6 +162,6 @@ body {
 {
   position: absolute;
   margin-top: 600px;
-  margin-left: 980px;
+  margin-left: 500px;
   color: #0A9598;
 }
