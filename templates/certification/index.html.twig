@@ -1,20 +1,29 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CertificationController!{% endblock %}
+{% block title %}Certifications{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<link rel="stylesheet" href="/assets/css/style_certif.css">
+<h1>Certifications</h1>
+<div class="infocardContainer">
+  <div id="main">
+    <img src="/assets/images/cisco.png"></img>
+  </div>
+  <div id="textbois">
+    <h2>Certification CISCO</h2>
+    <h4>WIP</h4>
+    <p>WIP</p>
+  </div>
+</div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Marvine Gaudrée/Documents/workspace/portfolio/portfolio-gaudree/src/Controller/CertificationController.php'|file_link(0) }}">src/Controller/CertificationController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Marvine Gaudrée/Documents/workspace/portfolio/portfolio-gaudree/templates/certification/index.html.twig'|file_link(0) }}">templates/certification/index.html.twig</a></code></li>
-    </ul>
+<div class="infocardContainer2">
+  <div id="main2">
+    <img src="/assets/images/voltaire.png"></img>
+  </div>
+  <div id="textbois">
+    <h2>Certification VOLTAIRE</h2>
+    <h4>WIP</h4>
+    <p>WIP</p>
+  </div>
 </div>
 {% endblock %}

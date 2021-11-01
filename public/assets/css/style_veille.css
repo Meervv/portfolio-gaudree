@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
 
-.titre h1
-{
-    font-size: 25px;
-    margin-left: 250px;
-    color: #fff;
-}
-
 .container  {
   position: absolute;
   margin-left: 350px;
