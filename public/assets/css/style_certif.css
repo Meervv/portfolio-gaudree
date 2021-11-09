@@ -1,16 +1,8 @@
-/*TODO: clean it all up, finish flex, add aesthetics, icons, redefine to be relative to vh-vw, maybe rework v2 variant using scss and frames and real transitions? */
-html body {
-    background-color: black;
-    margin: 0 0 0 0;
-  }
-
 h1
 {
   margin-left: 300px;
   color: white;
 }
-
-
 
   .infocardContainer * {
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -26,7 +18,6 @@ h1
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    background: black;
     background: linear-gradient(121deg, rgba(255,255,255,0) 13%, black 100%);
     transition: all 500ms ease-in;
     transition-delay: 1s;
@@ -39,7 +30,6 @@ h1
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    background: white;
     background: linear-gradient(121deg, rgba(255,255,255,0) 13%, black 100%);
     transition: all 500ms ease-in;
     transition-delay: 1s;

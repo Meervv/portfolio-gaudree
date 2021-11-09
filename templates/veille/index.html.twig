@@ -3,7 +3,8 @@
 {% block title %}Mes veilles !{% endblock %}
 
 {% block body %}
-<link rel="stylesheet" href="/assets/css/style_veille.css">
+<link rel="stylesheet" href="{{ asset('assets/css/style_veille.css') }}">
+          
 <div class="titre">
   <h1>Veilles Technologiques (THEME IA)</h1>
 </div>
@@ -11,7 +12,7 @@
   <div class="content">
     <h1>Jukebox par OpenAi</h1>
     <h3>Jukebox est une IA qui est capable de créer une musique de toute pièce, toute seule.
-    <br><br><a href="/assets/download/jukebox.pdf" download="jukebox.pdf">Télécharger le PDF</a></h3>
+    <br><br><a href="{{asset('assets/download/jukebox.pdf')}}" download="jukebox.pdf">Télécharger le PDF</a></h3>
     
   </div>
   <div class="flap"></div>
@@ -20,8 +21,10 @@
 <div class="container2">
   <div class="content2">
     <h1>Mountain View par Google</h1>
-    <h3>Mountain View est une IA capable d'améliorer la qualité d'une photo.<br><br><a href="/assets/download/
-    Mountain_View.pdf" download="Mountain_View.pdf">Télécharger le PDF</a></h3>
+    <h3>Mountain View est une IA capable d'améliorer la qualité d'une photo.<br><br>
+      <a href="{{asset('assets/download/Mountain_View.pdf')}}" download="Mountain_View.pdf">
+      Télécharger le PDF</a>
+    </h3>
   </div>
   <div class="flap2"></div>
   

@@ -3,7 +3,7 @@
 {% block title %}Présentation{% endblock %}
 
 {% block body %}
-    <link rel="stylesheet" href="/assets/css/style_accueil.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style_accueil.css') }}">
     <h1>Présentation</h1>
     <br>
     <div class="titrePresentation">
@@ -19,9 +19,7 @@
         </p>
     </div>
     <div class="imgCV">
-        <img src="/assets/images/cv.jpg" alt="monCV" class="cv">
+        <img src="{{ asset('assets/images/cv.jpg')}}" alt="monCV" class="cv">
     </div>
-
-
 
 {% endblock %}

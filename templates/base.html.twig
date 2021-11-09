@@ -5,11 +5,11 @@
         <title>{% block title %}Mon portfolio !{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+        {% block stylessheets %}
+            <link rel="stylesheet" href="{{ asset('assets/css/style_navigation.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
         {% endblock %}
-        <link rel="stylesheet" href="/assets/css/style_navigation.css">
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
@@ -19,7 +19,7 @@
         <div class="navigation">
             <ul>
                 <li class="list">
-                    <a href="/" name="accueil">
+                    <a href="/accueil" name="accueil">
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="text">Accueil</span>
                     </a>

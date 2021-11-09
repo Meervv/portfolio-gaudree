@@ -3,11 +3,11 @@
 {% block title %}Certifications{% endblock %}
 
 {% block body %}
-<link rel="stylesheet" href="/assets/css/style_certif.css">
+<link rel="stylesheet" href="#">
 <h1>Certifications</h1>
 <div class="infocardContainer">
   <div id="main">
-    <img src="/assets/images/cisco.png"></img>
+    <img src="{{asset('assets/images/cisco.png')}}"></img>
   </div>
   <div id="textbois">
     <h2>Certification CISCO</h2>
@@ -18,7 +18,8 @@
 
 <div class="infocardContainer2">
   <div id="main2">
-    <img src="/assets/images/voltaire.png"></img>
+    <img src="{{asset('assets/images/voltaire.png')}}"></img>
+    <link rel="stylesheet" href="{{ asset('assets/css/style_certif.css') }}">
   </div>
   <div id="textbois">
     <h2>Certification VOLTAIRE</h2>
